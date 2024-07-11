@@ -2,3 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    box-sizing: border-box;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*custom css*/
+.underline-custom{
+  position: relative;
+}
+.home-custom{
+  position: relative;
+}
+.home-custom::before{
+  content: '';
+  width: 100% !important;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  background-color: rgb(74 222 128) !important;
+  transition: all ease-in 0.4s;
+}
+.underline-custom::before{
+  content: '';
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  background-color: white;
+  transition: all ease-in 0.5s;
+}
+.underline-custom:hover::before{
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  background-color: rgb(74 222 128);
+}
+.btn-custom{
+  box-shadow: inset 0px 0px 0px 0px ;
+  border: 1px solid white;
+  transition: all ease-in 0.4s;
+  box-sizing: border-box;
+
+}
+.btn-custom:hover{
+  box-shadow: inset 200px 0px 0px 0px rgb(34 197 94);
+  border: 1px solid rgb(34 197 94);
+  box-sizing: border-box;
+
+
+}
