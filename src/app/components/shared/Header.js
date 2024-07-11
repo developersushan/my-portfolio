@@ -8,7 +8,7 @@ const Header = () => {
     const [open,setOpen] =useState(false)
     
   return (
-    <div className="   px-2 py-2 w-[calc(100%_12px)] xl:w-[1200px] mx-auto ">
+    <div className="    py-2 w-[calc(100%_-_12px)] xl:w-[1200px] mx-auto ">
       <div className="flex items-center justify-between">
         <div>
             <h3 className="text-3xl font-bold ">Dev<span className="text-xl italic text-green-400">Sushan</span> <span>.</span></h3>
