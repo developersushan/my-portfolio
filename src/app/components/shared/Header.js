@@ -11,7 +11,7 @@ const Header = () => {
     <div className=" sticky top-0 bg-black z-50 py-4 w-[calc(100%_-_12px)] xl:w-[1200px] mx-auto ">
       <div className="flex items-center justify-between">
         <div>
-            <h3 className="cursor-pointer text-3xl font-bold ">Dev<span className="text-xl italic text-green-400">Sushan</span> <span>.</span></h3>
+            <a href="/" className="cursor-pointer text-3xl font-bold ">Dev<span className="text-xl italic text-green-400">Sushan</span> <span>.</span></a>
         </div>
         {/* mobile version */}
         <div className="md:hidden relative ">
