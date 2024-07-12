@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { FaLinkedinIn } from "react-icons/fa6";
 import { TbBrandUpwork ,TbBrandFiverr,TbBrandGithub} from "react-icons/tb";
 import { AiOutlineDownload } from "react-icons/ai";
+
 const Banner = () => {
   const downloadFile =()=>{
     const resumeFilePath = resume;
@@ -40,7 +41,7 @@ const Banner = () => {
         </div>
         <p className='  md:w-[500px]'>I excel at crafting elegant digital experiences and i am proficient in various programming languages and technologies</p>
         <div className="flex gap-10 mt-5 items-center">
-            <button onClick={downloadFile} download  className='flex gap-2 items-center text-sm border py-1 px-3 rounded-full border-green-400 text-green-400'>Download CV <span className='text-base'><AiOutlineDownload/></span></button>
+            <button download className='flex gap-2 items-center text-sm border py-1 px-3 rounded-full border-green-400 text-green-400'>Download CV <span className='text-base'><AiOutlineDownload/></span></button>
             <div>
                 <ul className='flex gap-3 items-center'>
                     <li className='border p-1 rounded-full border-green-400'><a href="https://github.com/developersushan"><TbBrandGithub/></a></li>
@@ -53,7 +54,7 @@ const Banner = () => {
       </div>
 
         <div className="lg:w-[400px] lg:h-[400px]">
-            <Image src={BannerImage} className='rounded-full bg-cover lg:w-[300px] lg:h-[300px]' width={600} height={600} alt="banner image" />
+            <Image src={BannerImage} className='shadow-custom rounded-full bg-cover lg:w-[300px] lg:h-[300px]' width={600} height={600} alt="banner image" />
         </div>
     </div>
   )

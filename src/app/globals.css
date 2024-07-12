@@ -80,3 +80,25 @@ body {
 
 
 }
+.shadow-custom{
+    animation: banner 5s ease-in infinite;
+}
+ @keyframes banner{
+  0%{
+    box-shadow: 2px 2px 11px 12px rgb(95 221 195);
+  }
+  25%{
+    box-shadow: 2px 2px 15px 15px rgb(95 221 195);
+  }
+  45%{
+    box-shadow: 2px 2px 18px 18px rgb(95 221 195);
+  }
+  75%{
+    box-shadow: 2px 2px 20px 21px rgb(95 221 195);
+  }
+  100%{
+   
+      box-shadow: 2px 2px 15px 15px rgb(95 221 195);
+    
+  }
+ }
