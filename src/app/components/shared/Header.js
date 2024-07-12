@@ -8,7 +8,7 @@ const Header = () => {
     const [open,setOpen] =useState(false)
     
   return (
-    <div className=" sticky top-0 bg-black  py-4 w-[calc(100%_-_12px)] xl:w-[1200px] mx-auto ">
+    <div className=" sticky top-0 bg-black z-50 py-4 w-[calc(100%_-_12px)] xl:w-[1200px] mx-auto ">
       <div className="flex items-center justify-between">
         <div>
             <h3 className="cursor-pointer text-3xl font-bold ">Dev<span className="text-xl italic text-green-400">Sushan</span> <span>.</span></h3>
@@ -26,7 +26,7 @@ const Header = () => {
                 ))}
                 
             </ul>
-            <button className="btn-custom py-1 px-5 rounded ">Here Me !</button>
+            <button className="btn-custom py-1 px-5 rounded ">Hire Me !</button>
         </div>
         </div>
         <div className="md:flex gap-10 hidden">
@@ -36,7 +36,7 @@ const Header = () => {
                 ))}
                 
             </ul>
-            <button className="btn-custom py-1 px-5 rounded ">Here Me !</button>
+            <button className="btn-custom py-1 px-5 rounded ">Hire Me !</button>
         </div>
       </div>
     </div>
