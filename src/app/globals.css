@@ -138,3 +138,42 @@ body {
   height: 3px;
   background-color: rgb(74 222 128);
  }
+.custom-image{
+  background:url('./assets/image/IMG_1491-01.jpeg');
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  border-radius: 5px;
+}
+@media screen and (max-width:425px) {
+  .custom-image{
+    height: 200px;
+
+  }  
+}
+.custom-image::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.705);
+  width: 100%;
+  height: 100%;
+  opacity: 70%;
+}
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.custom-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(74 222 128);
+  border-radius: 4px;
+  outline: 1px solid slategrey;
+}

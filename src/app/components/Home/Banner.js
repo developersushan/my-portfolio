@@ -41,7 +41,7 @@ const Banner = () => {
         </div>
         <p className='  md:w-[500px]'>I excel at crafting elegant digital experiences and i am proficient in various programming languages and technologies</p>
         <div className="flex gap-10 mt-5 items-center">
-            <button download className='flex gap-2 items-center text-sm border py-1 px-3 rounded-full border-green-400 text-green-400'>Download CV <span className='text-base'><AiOutlineDownload/></span></button>
+            <button download className='flex gap-2 items-center text-sm border py-1 px-3 hover:border-pink-500 hover:text-pink-500 duration-300   rounded-full border-green-400 text-green-400'>Download CV <span className='text-base'><AiOutlineDownload/></span></button>
             <div>
                 <ul className='flex gap-3 items-center'>
                     <li className='border p-1 rounded-full border-green-400'><a href="https://github.com/developersushan"><TbBrandGithub/></a></li>

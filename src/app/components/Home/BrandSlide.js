@@ -12,7 +12,7 @@ import Image8 from '../../assets/image/download(6).png'
 import Image from 'next/image'
 const BrandSlide = () => {
   return (
-    <div className='my-6'>
+    <div className='my-6 py-10'>
         <Marquee pauseOnHover={true} className='' speed={80}>
             
         <div className='mr-6'>
